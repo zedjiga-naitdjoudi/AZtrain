@@ -1,0 +1,1064 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+
+
+/* Style de base pour le body */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001C45;
+    /* Fond clair par défaut */
+    color: white;
+    /* Couleur de texte par défaut */
+}
+
+/* En-tête */
+header {
+    background-color: #040235;
+    /* Fond blanc pour la barre de navigation */
+    padding: 10px 20px;
+    /* Espacement interne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ombre subtile pour la barre de navigation */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Espacement des éléments de l'en-tête */
+    position: relative;
+    /* Assurez-vous que le header est en position relative */
+    z-index: 10;
+
+    /* Le header doit se superposer à la section du contenu */
+}
+
+.logo {
+    height: 50px;
+    /* Hauteur du logo */
+    margin-right: 5px;
+    /* Réduit l'espace entre le logo et le titre */
+}
+
+.h11 {
+
+    color: white;
+    /* Couleur de base pour le texte du titre */
+    font-size: 1.5rem;
+    /* Ajustez la taille de la police au besoin */
+    white-space: nowrap;
+    /* Empêche le titre de passer à la ligne */
+    margin-left: -150px;
+}
+
+
+.c1 {
+    color: #6A797A;
+    /* Bleu pour le 'A' */
+}
+
+.c2 {
+    color: #77D6DC;
+    /* Gris pour le 'Z' */
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    /* Suppression des puces */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Alignement horizontal des liens */
+}
+
+nav ul li {
+    margin-left: 20px;
+    /* Espacement entre les liens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Suppression du soulignement */
+    color: white;
+    /* Couleur de texte par défaut */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #77D6DC;
+    /* Couleur lors du survol */
+}
+
+/* Commutateurs de thème */
+.theme-switcher img {
+    width: 40px;
+    /* Taille des icônes */
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Couche semi-transparente pour lisibilité */
+    padding: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #cbc9c9;
+    padding: 40px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-content {
+    padding: 40px 0;
+    /* Ajout de padding vertical */
+    display: flex;
+    justify-content: center;
+    /* Centrer le contenu */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin: 0 85px;
+}
+
+.footer-title {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-link {
+    color: #d6d8d9e8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    /* Ajout pour l'état focus pour l'accessibilité */
+    text-decoration: underline;
+    color: #d6d8d9e8;
+    /* Couleur plus foncée pour le survol */
+}
+
+.footer-info {
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-info p {
+    color: white;
+}
+
+.plan-site-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+}
+
+.t1 {
+    color: #0053b3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.plan-section {
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-left: 5px solid #0053b3;
+    position: relative;
+}
+
+.plan-section h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0053b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.toggle-button:hover {
+    background: #003d82;
+}
+
+/* Suppression des marges intérieures et des puces pour les ul */
+.plan-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-section ul li a {
+    text-decoration: none;
+    color: #0066cc;
+    padding: 5px 0;
+    display: block;
+}
+
+.plan-section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.sous-liste {
+    display: none;
+    list-style-type: none;
+    /* Enlève les puces */
+    padding-left: 20px;
+    /* Ajuste selon vos besoins */
+}
+
+.sous-liste li {
+    padding: 5px 0;
+}
+
+/* Style pour la liste lorsqu'elle est visible */
+.sous-liste li a {
+    text-decoration: none;
+    color: #0066cc;
+    display: block;
+}
+
+.sous-liste li a:hover {
+    text-decoration: underline;
+}
+
+.theme-background {
+    background: url('images/wpnight.webp') no-repeat center center/cover;
+    height: 450px;
+    /* Augmentez cette valeur si vous voulez que la section soit plus grande */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+
+
+.theme-background::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(115, 114, 114, 0.212);
+    /* Overlay sombre avec 30% d'opacité */
+    z-index: 2;
+    /* Assurez-vous qu'il est entre l'image de fond et le contenu */
+}
+
+.scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 30em;
+}
+
+.scroller>span {
+    position: absolute;
+
+    animation: slide 10s infinite ease-in-out;
+    font-weight: bold;
+
+}
+
+@keyframes slide {
+    0% {
+        top: 0.1em;
+    }
+
+    33% {
+        top: -1.1em;
+    }
+
+    66% {
+        top: -2.28em;
+    }
+
+    100% {
+        top: -3.5em
+    }
+
+}
+
+
+
+.main-content {
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 55px;
+    /* Taille de police réduite */
+    top: 40%;
+    /* Position ajustée vers le haut */
+    left: 23%;
+    /* Position ajustée vers la gauche */
+    line-height: 1;
+    /* Ajustez selon l'aspect souhaité */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    /* Assurez-vous que le contenu est au-dessus de l'overlay */
+    animation: slideRight 20s linear infinite;
+    white-space: nowrap;
+    /* Gardez le texte sur une seule ligne pendant l'animation */
+}
+
+.content {
+    display: flex;
+    /* Utilise flexbox pour disposer les éléments côte à côte */
+    height: 100vh;
+    /* Hauteur de la fenêtre pour éviter le défilement vertical */
+    max-width: 200vw;
+    /* Largeur maximale pour éviter le défilement horizontal */
+    overflow: hidden;
+    /* Cache le contenu qui dépasse les dimensions */
+    min-height: 100vh;
+    /* Hauteur minimum pour que le conteneur prenne toute la hauteur de la fenêtre */
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    /* Pour éviter que les cartes ne passent à la ligne suivante */
+    overflow-x: auto;
+    /* Permet de faire défiler horizontalement si nécessaire */
+    padding: 20px 0;
+    /* Espacement vertical */
+    margin-top: -40px;
+}
+
+.card {
+    width: 240px;
+    /* Largeur fixe pour chaque carte */
+    margin: 10px;
+    /* Espacement autour des cartes */
+    min-width: 240px;
+    /* Minimum width to ensure content doesn't squeeze too much */
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    /* Hauteur réduite */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    transition: transform 0.2s ease;
+    /* Ajoute une transition sur le transform */
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    /* Effet zoom au survol */
+}
+
+.card h3 {
+    width: 100%;
+    /* S'étend sur toute la largeur de la carte */
+    background: #ffffff;
+    /* Fond blanc pour le titre */
+    color: #333;
+    /* Couleur du texte pour contraste sur fond blanc */
+    padding: 8px 0;
+    /* Padding vertical pour donner de l'espace */
+    margin: 0;
+    /* Enlève les marges par défaut */
+    position: relative;
+    z-index: 2;
+    /* S'assure que le titre est au-dessus de l'overlay */
+    bottom: auto;
+    /* Réinitialise la position par défaut pour aligner le titre correctement */
+    top: 0;
+    /* Positionne le titre en haut de la carte */
+    text-align: center;
+
+}
+
+.card-button {
+    padding: 5px 10px !important;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Bouton semi-transparent */
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    margin-left: 20%;
+}
+
+.card-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Changement d'opacité au survol */
+}
+
+/* ... Reste de votre CSS ... */
+
+/* Assurez-vous de gérer le défilement pour les petits écrans */
+@media (max-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+        /* Les cartes s'enrouleront sur les petits écrans */
+        justify-content: center;
+        /* Centre les cartes lorsqu'elles s'enroulent */
+    }
+
+    .card {
+        /* Optional: Adjust width and margin for small screens */
+        width: auto;
+        margin: 10px;
+    }
+}
+
+.heading1 {
+    text-align: center;
+    /* Centre le titre horizontalement */
+    margin-top: -100px;
+    /* Réduit l'espace au-dessus du titre */
+    margin-bottom: 40px;
+    /* Réduit l'espace entre le titre et les cartes */
+    font-size: 2em;
+    /* Taille de la police pour une visibilité claire */
+    color: white;
+    /* Couleur du texte, peut-être ajustée pour s'adapter au design */
+
+}
+
+.heading3 {
+    text-align: center;
+    color: #000;
+}
+
+
+.heading2 {
+    text-align: center;
+    color: #000;
+}
+
+.heading1a {
+    text-align: center;
+}
+
+
+.mc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centralizes the containers */
+    align-items: flex-start;
+    /* Aligns items at the start of the page */
+    gap: 30px;
+    /* Provides space between sidebar and content */
+}
+
+.sidebar {
+    flex: 1.25;
+    /* Augmente légèrement la taille de la sidebar */
+    max-width: 1800px;
+    /* Augmente la largeur maximale de la sidebar */
+    padding: 10px;
+    width: 800px;
+
+    margin-top: 2%;
+    border-radius: 5px;
+
+
+
+}
+
+.content1 {
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* Centre le contenu dans la direction horizontale */
+    align-items: center;
+    /* Centre le contenu dans la direction verticale */
+}
+
+.blocp {
+    width: 80%;
+    /* Taille du bloc de formulaire */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre subtile */
+    background: #9e9999;
+    border-radius: 8px;
+}
+
+.last-journey {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.blocp h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blocp form {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocp label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.blocp input[type="text"],
+.blocp input[type="time"],
+.blocp input[type="date"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.blocp button {
+    padding: 10px;
+    background-color: #747472;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.blocp button:hover {
+    background-color: #0056b3;
+}
+
+.sidebar figure img {
+    width: 340px;
+    height: 530px;
+    margin-bottom: 10px;
+}
+
+.sidebar figure figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+.itinerary {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    /* Espacement entre chaque itinéraire */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.journey-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.depart-arrivee-container,
+.ligne-direction-container {
+    display: inline-block;
+    /* Rend les conteneurs comme des blocs en ligne */
+    width: 100%;
+    /* Permet de prendre toute la largeur disponible pour le centrage */
+    margin: 0 auto;
+    /* Centrage horizontal automatique */
+}
+
+
+
+.depart-arrivee-container span {
+    display: block;
+    flex-basis: 50%;
+    text-align: center;
+    color: #000;
+}
+
+.ligne-direction-container span {
+    text-align: center;
+    color: #000;
+}
+
+/* Si vous avez besoin que ces spans soient alignés différemment, ajustez ici */
+.depart-arrivee-container span:first-child,
+.ligne-direction-container span:first-child {
+    text-align: center;
+    margin-right: 10px;
+    color: #000;
+}
+
+/* Stylisation supplémentaire pour les <p> à l'intérieur de .journey-details si nécessaire */
+.journey-details p {
+    padding: 5px 0;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+    /* Séparation visuelle des différents blocs d'informations */
+}
+
+.stops-list {
+    list-style-type: none;
+    /* Supprimer les puces de la liste */
+    padding: 0;
+    margin: 10px 0;
+}
+
+.stops-list li {
+    border-bottom: 1px solid #ddd;
+    /* Ligne de séparation entre les éléments */
+    padding: 5px;
+    color: #000;
+}
+
+/* Style pour le bouton qui affiche les détails */
+button {
+    padding: 5px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+
+.search-section {
+    width: 100%;
+    /* Ajustez la largeur à 100% pour qu'elle s'étende sur toute la largeur disponible */
+    max-width: 800px;
+    /* Ajustez la largeur maximale pour correspondre à la largeur de votre carte */
+    margin: 20px auto;
+    /* Centre la section sur la page */
+    padding: 20px;
+    background-color: #9e9999;
+    /* Couleur de fond légère pour le formulaire */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Pour s'assurer que tous les contenus internes sont contenus */
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    /* Empile les éléments de formulaire verticalement */
+    align-items: stretch;
+    /* Étire les éléments pour qu'ils occupent toute la largeur du formulaire */
+}
+
+.search-form label {
+    margin-bottom: 10px;
+    /* Ajoute un peu d'espace en dessous du label */
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    /* Espace entre l'input et le bouton */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.search-form input[type="submit"] {
+    padding: 10px;
+    background-color: #747472;
+    /* Couleur de fond pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+.search-form input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Foncer la couleur de fond lors du survol */
+}
+
+
+p {
+    text-align: center;
+
+}
+
+.last-journey p {
+    color: white;
+}
+
+.result-section-container {
+    text-align: center;
+    /* Centrer tous les éléments à l'intérieur de la section */
+    margin: 0 auto;
+    /* Centre la section sur la page */
+    max-width: 800px;
+    /* Ajustez cette valeur selon vos besoins */
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    /* Centre le tableau horizontalement */
+    margin: 20px 0;
+    /* Ajoute une marge autour du tableau pour l'espacement */
+}
+
+table {
+    width: 80%;
+    /* Définit la largeur du tableau */
+    max-width: 600px;
+    /* Limite la largeur maximale du tableau */
+    border-collapse: collapse;
+    /* Élimine l'espacement entre les cellules */
+    margin: 0 auto;
+    /* Centre le tableau horizontalement */
+    background-color: #f9f9f9;
+    /* Couleur de fond légère pour le tableau */
+    border: 1px solid #ccc;
+    /* Bordure subtile pour le tableau */
+    color: #000;
+}
+
+table thead th {
+    background-color: #040235;
+    /* Couleur de fond pour les en-têtes de tableau */
+    color: white;
+    /* Couleur du texte pour les en-têtes */
+    padding: 10px;
+    /* Espacement intérieur pour les en-têtes */
+    border: 1px solid #ccc;
+    /* Bordures pour délimiter les cellules */
+}
+
+table tbody td {
+    padding: 8px;
+    /* Espacement intérieur pour les cellules */
+    border: 1px solid #ccc;
+    /* Bordures pour délimiter les cellules */
+    text-align: center;
+    /* Centre le texte dans les cellules */
+}
+
+table tr:nth-child(even) {
+    background-color: #9e9a9a;
+    /* Couleur de fond alternée pour les lignes */
+}
+
+
+
+.histogram-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    /* Espacement équilibré entre les barres */
+    height: 300px;
+    /* Hauteur de l'histogramme */
+    width: 500px;
+    padding: 20px;
+    background-color: black;
+    /* Fond blanc pour l'histogramme */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Ombre douce pour un effet de profondeur */
+    border-radius: 10px;
+    /* Coins arrondis */
+    margin: 20px 0;
+    /* Espace au-dessus et en dessous de l'histogramme */
+    margin-left: 7%;
+}
+
+.menu {
+    display: flex;
+}
+
+.bar {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Animation pour le survol */
+    width: 30px;
+    /* Largeur de chaque barre */
+    margin: 0 5px;
+    /* Réduction de l'espacement entre les barres */
+    cursor: pointer;
+    /* Indique que les barres sont interactives */
+}
+
+.bar:hover {
+    transform: translateY(-10px);
+    /* Déplace légèrement la barre vers le haut au survol */
+    background-color: #ffe564;
+    /* Changement de couleur au survol */
+}
+
+.stations {
+    display: flex;
+    flex-direction: column;
+    /* Les stations s'affichent en colonne */
+    align-items: flex-start;
+    /* Alignement à gauche */
+    padding: 10px;
+    gap: 5px;
+    /* Espacement entre les noms des gares */
+    background-color: black;
+    /* Fond légèrement gris pour les noms des gares */
+    border-radius: 10px;
+    /* Coins arrondis pour les noms des gares */
+    /* Espace au-dessus de la liste des gares */
+    height: 300px;
+    /* Hauteur de l'histogramme */
+    width: 500px;
+    /* Pleine largeur */
+    margin-left: 50%;
+    margin-top: -27%;
+    margin-bottom: 10%;
+
+}
+
+
+.color-box {
+    width: 15px;
+    /* Rectangle de couleur plus grand */
+    height: 15px;
+    /* Hauteur du rectangle de couleur ajustée */
+    border-radius: 50%;
+    /* Cercle pour le rectangle de couleur */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    /* Petite ombre pour le rectangle de couleur */
+}
+
+.stat h2 {
+    text-align: center;
+
+}
+
+.headingprinc {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.station {
+    align-items: center;
+    /* Centrage vertical des éléments de la station */
+    font-weight: bold;
+    /* Texte en gras pour les noms des gares */
+    color: white;
+    /* Couleur de texte plus foncée pour une meilleure lisibilité */
+}
+
+.beforeContainer {
+    width: 100%;
+    justify-content: space-between;
+    /* Espacement équilibré entre les articles */
+}
+
+.fondDiv {
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    /* Ajustement pour un meilleur remplissage */
+    gap: 15px;
+    /* Augmentation de l'espacement entre les articles */
+    padding: 20px;
+    background: #e6e6e6;
+    /* Fond légèrement différent pour contraster avec les histogrammes */
+    border-radius: 10px;
+    /* Augmentation des coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    /* Ombre plus prononcée pour un effet élégant */
+}
+
+.content2 {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10%;
+    border-radius: 8px;
+
+}
+
+.content2 img {
+
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Centrer l'image */
+    padding: 10px;
+    /* Ajouter un peu d'espace autour de l'image */
+
+
+}
+
+.content2 h2,
+p {
+    text-align: center;
+    color: #000;
+}
+
+/* Style des sous-sections */
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #eee;
+    /* Couleur de fond pour distinguer les sections */
+}
+
+.localisation {
+    text-align: center;
+    color: #555;
+}
+
+/* Si vous voulez différencier les deux méthodes de localisation */
+.localisation-xml,
+.localisation-json {
+    padding-left: 20px;
+    /* Pour un peu d'indentation */
+}
+
+.uiverse {
+    position: relative;
+    background: #ffffff;
+    color: #000;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    right: 210px;
+    /* Augmentez cette valeur pour déplacer le bouton vers la gauche */
+    top: 200px;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+svg:hover span,
+svg:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+    background: linear-gradient(320deg, rgb(2, 64, 122), rgb(5, 43, 169));
+    color: #ffffff;
+}
+
+.last-journey h2 {
+    color: #fffdfd;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+.uiverse a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .about-section {
+    margin: 20px 120px;
+    padding: 20px;
+    background-color: #a29e9e;
+    border-radius: 8px;
+}
